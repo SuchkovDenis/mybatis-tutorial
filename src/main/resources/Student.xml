@@ -24,4 +24,12 @@
         </selectKey>
     </insert>
 
+    <update id = "update" parameterType = "Student">
+      UPDATE STUDENT SET NAME = #{name},
+         BRANCH = #{branch},
+         PERCENTAGE = #{percentage},
+         PHONE = #{phone},
+         EMAIL = #{email}
+      WHERE ID = #{id};
+   </update>
 </mapper>
